@@ -39,19 +39,38 @@ ol li, ul li {
     margin-bottom: 5px;
 }
 
+/* Styling untuk gambar */
+img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto;
+}
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 30px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            p, li {
-                font-size: 16px;
-            }
-        }
+    .container {
+        max-width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Penyesuaian gambar pada mobile */
+    img {
+        width: 90%; /* Mengurangi lebar gambar */
+        height: auto;
+        display: block; /* Membuat gambar block-level */
+        margin: 10px auto; /* Menambahkan margin */
+    }
+}
